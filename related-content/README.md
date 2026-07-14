@@ -1,6 +1,6 @@
 # Related Content
 
-https://mitchellveix.github.io/drupal-components/related-content/index.html
+https://mitchellveix.github.io/drupal-components/related-content/
 
 A standalone recreation of a Drupal related-content component originally built for the Poverty Point website.
 
@@ -15,10 +15,10 @@ related-content/
 │   └── styles.scss
 ├── images/
 │   ├── related-content-background.png
-│   ├── restaurant-cotton.jpg
-│   ├── cotton-museum.jpg
-│   ├── poverty-point-cabin.jpg
-│   └── arrow-right-gold.svg
+│   ├── related-content-image1.jpg
+│   ├── related-content-image2.jpg
+│   ├── related-content-image3.jpg
+│   └── arrow-right-gold.jpg
 └── README.md
 ```
 
