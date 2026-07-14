@@ -1,4 +1,4 @@
-# Related Content — Poverty Point
+# Related Content
 
 A standalone recreation of a Drupal related-content component originally built for the Poverty Point website.
 
