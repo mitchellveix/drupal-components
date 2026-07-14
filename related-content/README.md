@@ -2,7 +2,7 @@
 
 https://mitchellveix.github.io/drupal-components/related-content/
 
-A standalone recreation of a Drupal related-content component originally built for the Poverty Point website.
+A standalone recreation of a Drupal related-content component originally built for the Louisiana Poverty Point website.
 
 ## Folder structure
 

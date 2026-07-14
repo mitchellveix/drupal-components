@@ -1,4 +1,4 @@
-# Promo Full Image
+# Promo Card Display
 
 https://mitchellveix.github.io/drupal-components/promo-card-display
 
