@@ -1,5 +1,7 @@
 # Related Content
 
+https://mitchellveix.github.io/drupal-components/related-content/index.html
+
 A standalone recreation of a Drupal related-content component originally built for the Poverty Point website.
 
 ## Folder structure
