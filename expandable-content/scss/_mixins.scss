@@ -1,0 +1,10 @@
+// Creates a CSS chevron without requiring an external SVG asset.
+@mixin svg-colorized($icon, $color) {
+  border-color: $color;
+}
+
+// Scales the CSS chevron.
+@mixin icon-scale-by-height($original-width, $original-height, $height) {
+  width: $height * 0.55;
+  height: $height * 0.55;
+}

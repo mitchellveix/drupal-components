@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expandable Content Component</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <main>
+    <section class="component--expandable-content" aria-labelledby="expandable-content-heading">
+      <div class="expandable-content--inner">
+        <div class="ec-headline">
+          <h2 id="expandable-content-heading">Cities &amp; Towns Headline</h2>
+        </div>
+
+        <div class="content">
+
+          <details class="content-wrapper">
+            <summary class="ec-info">
+              <div class="ec-img">
+                <img
+                  src="images/expandable-content-image1.jpg"
+                  width="64"
+                  height="64"
+                  alt="Alt text"
+                >
+              </div>
+
+              <div class="ec-titles">
+                <h4>Table Layout</h4>
+                <div class="ec-subtitle">10 cities &amp; towns</div>
+              </div>
+
+              <span class="ec-arrow" aria-hidden="true"></span>
+            </summary>
+
+            <div class="ec-body field--name-field-ec-body">
+              <div class="ec-table-wrapper">
+                <table>
+                  <thead>
+                    <tr>
+                      <th scope="col">City</th>
+                      <th scope="col">Population</th>
+                      <th scope="col">Sub-Region</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><a href="#">Anaktuvuk Pass</a></td>
+                      <td>425</td>
+                      <td><a href="#">Brooks Range</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">Bettles</a></td>
+                      <td>23</td>
+                      <td><a href="#">Brooks Range</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">Coldfoot</a></td>
+                      <td>34</td>
+                      <td><a href="#">Brooks Range</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">Kotzebue</a></td>
+                      <td>3,102</td>
+                      <td><a href="#">Western Arctic</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">Nome</a></td>
+                      <td>3,699</td>
+                      <td><a href="#">Western Arctic</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">Prudhoe Bay/Deadhorse</a></td>
+                      <td>1,310</td>
+                      <td><a href="#">Arctic Coast</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">St. Lawrence Island</a></td>
+                      <td>640 (Gambell)</td>
+                      <td><a href="#">Western Arctic</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">Unalakleet</a></td>
+                      <td>765</td>
+                      <td><a href="#">Western Arctic</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">Utqiaġvik (Barrow)</a></td>
+                      <td>4,927</td>
+                      <td><a href="#">Arctic Coast</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">Wiseman</a></td>
+                      <td>5</td>
+                      <td><a href="#">Brooks Range</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </details>
+
+          <details class="content-wrapper">
+            <summary class="ec-info">
+              <div class="ec-img">
+                <img
+                  src="images/expandable-content-image2.jpg"
+                  width="64"
+                  height="64"
+                  alt="Alt text"
+                >
+              </div>
+
+              <div class="ec-titles">
+                <h4>Listed Layout</h4>
+                <div class="ec-subtitle">23 cities &amp; towns</div>
+              </div>
+
+              <span class="ec-arrow" aria-hidden="true"></span>
+            </summary>
+
+            <div class="ec-body field--name-field-ec-body">
+              <ul class="ec-location-list">
+                <li>
+                  <h5><a class="ec-body-link" href="#">Arctic National Wildlife Refuge</a></h5>
+                  <p class="ec-bold">Nearby towns:</p>
+                  <p>City name | City name | City name</p>
+                </li>
+                <li>
+                  <h5><a class="ec-body-link" href="#">Denali National Park</a></h5>
+                  <p class="ec-bold">Nearby towns:</p>
+                  <p>City name | City name | City name</p>
+                </li>
+                <li>
+                  <h5><a class="ec-body-link" href="#">Gates of the Arctic National Park</a></h5>
+                  <p class="ec-bold">Nearby towns:</p>
+                  <p>City name | City name | City name</p>
+                </li>
+                <li>
+                  <h5><a class="ec-body-link" href="#">Kenai National Wildlife Refuge</a></h5>
+                  <p class="ec-bold">Nearby towns:</p>
+                  <p>City name | City name | City name</p>
+                </li>
+                <li>
+                  <h5><a class="ec-body-link" href="#">Wrangell-St. Elias National Park</a></h5>
+                  <p class="ec-bold">Nearby towns:</p>
+                  <p>City name | City name | City name</p>
+                </li>
+              </ul>
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

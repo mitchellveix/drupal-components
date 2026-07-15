@@ -1,0 +1,241 @@
+@import 'config';
+@import 'mixins';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #17232b;
+  background: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+a {
+  color: $alaska-blue;
+}
+
+.component--expandable-content {
+
+  .expandable-content--inner {
+    margin: 0 auto;
+    max-width: 96.8rem;
+    padding: 1rem 12rem;
+
+    @media only screen and (max-width: 900px) {
+      padding: 1rem 2rem;
+    }
+
+    .ec-headline h2 {
+      margin: 0 0 2rem;
+      text-align: center;
+    }
+
+    .ec-info h4 {
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+    }
+
+    .content-wrapper {
+      border: 1px solid $blue-gray;
+      border-radius: 8px;
+      margin-bottom: 1.6rem;
+      padding: 2.4rem;
+      transition: background-color 0.25s ease, border-color 0.25s ease;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #f4f4f4;
+        border-color: $alaska-blue;
+      }
+
+      summary.ec-info {
+        list-style: none;
+
+        &::-webkit-details-marker {
+          display: none;
+        }
+
+        &::marker {
+          display: none;
+          content: '';
+        }
+
+        &:focus-visible {
+          outline: 3px solid rgba($alaska-blue, 0.35);
+          outline-offset: 6px;
+          border-radius: 4px;
+        }
+      }
+
+      .ec-info {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.6rem;
+      }
+
+      .ec-img img {
+        display: block;
+        flex: 0 0 auto;
+        width: 64px;
+        height: 64px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      .ec-titles {
+        padding-top: 1rem;
+      }
+
+      .ec-no-subtitle {
+        padding-top: 2rem;
+      }
+
+      .ec-arrow {
+        position: relative;
+        align-self: center;
+        flex: 0 0 2rem;
+        width: 2rem;
+        height: 2rem;
+        margin-left: auto;
+        margin-right: 1rem;
+
+        &::after {
+          content: '';
+          position: absolute;
+          display: block;
+          top: 50%;
+          left: 50%;
+          border-style: solid;
+          border-width: 0 3px 3px 0;
+          transform: translate(-65%, -65%) rotate(45deg);
+          transition: transform 0.25s ease, border-color 0.25s ease;
+
+          @include svg-colorized($chevron-right, $blue-gray);
+          @include icon-scale-by-height(320, 512, 2rem);
+        }
+
+        &:hover::after {
+          @include svg-colorized($chevron-right, $alaska-blue);
+        }
+      }
+
+      &:hover .ec-arrow::after {
+        @include svg-colorized($chevron-right, $alaska-blue);
+      }
+
+      &:hover summary.ec-info h4 {
+        color: $alaska-blue;
+      }
+
+      .ec-subtitle {
+        margin-top: 0.4rem;
+        color: $blue-gray;
+      }
+
+      &[open] {
+        border-color: $alaska-blue;
+
+        &:hover {
+          background-color: $white;
+        }
+
+        summary.ec-info h4 {
+          color: $alaska-blue;
+        }
+
+        .ec-arrow::after {
+          transform: translate(-35%, -35%) rotate(225deg);
+          @include svg-colorized($chevron-right, $alaska-blue);
+        }
+
+        .field--name-field-ec-body {
+          padding-top: 2rem;
+        }
+
+        .ec-location-list {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+
+        .ec-location-list li {
+          margin: 0;
+          padding: 0;
+        }
+
+        .ec-location-list li + li {
+          margin-top: 2.4rem;
+          padding-top: 2.4rem;
+          border-top: 1px solid #f5f5f5;
+        }
+
+        .ec-location-list h5 {
+          margin: 0 0 0.75rem;
+          padding: 0;
+          font-size: 1.1rem;
+        }
+
+        .ec-body-link {
+          padding: 0;
+          text-decoration: underline;
+          text-decoration-thickness: 1px;
+          text-underline-offset: 0.2em;
+        }
+
+        .ec-location-list p {
+          margin: 0.25rem 0;
+          color: $blue-gray;
+          line-height: 1.6;
+        }
+
+        .ec-bold {
+          font-family: $greycliff-bold;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .ec-table-wrapper {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 0.9rem;
+      border-bottom: 1px solid #d9e0e4;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      color: #17232b;
+      background: #f4f4f4;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .content-wrapper {
+        padding: 1.5rem;
+      }
+
+      .ec-info {
+        gap: 1rem;
+      }
+
+      .ec-arrow {
+        margin-right: 0;
+      }
+    }
+  }
+}
