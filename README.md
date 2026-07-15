@@ -7,3 +7,4 @@ A collection of Drupal components I've built and recreated as standalone HTML/CS
 - Related Content: https://mitchellveix.github.io/drupal-components/related-content/
 - Promo Full Image: https://mitchellveix.github.io/drupal-components/promo-full-image/
 - Promo Card Display: https://mitchellveix.github.io/drupal-components/promo-card-display/
+- Expandable Content: https://mitchellveix.github.io/drupal-components/expandable-content/
