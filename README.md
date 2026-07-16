@@ -1,6 +1,6 @@
 # Drupal Components
 
-A collection of Drupal components I've built and recreated as standalone HTML/CSS projects.
+Collection of reusable Drupal-based front-end components built using HTML, SCSS, JavaScript, and responsive design principles. Demonstrates component architecture, accessibility practices, and translation of design concepts into production-ready interfaces.
 
 ## Components
 
