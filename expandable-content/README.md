@@ -2,7 +2,13 @@
 
 https://mitchellveix.github.io/drupal-components/expandable-content
 
-A standalone recreation of a Drupal expandable content component originally built for the Travel Alaska website.
+An accessible expandable content component originally developed for the Travel Alaska website. This component was recreated to demonstrate interactive content patterns while maintaining usability and accessibility standards.
+
+## Features
+- Expand/collapse interaction for progressive content disclosure
+- Keyboard-accessible controls
+- Semantic HTML structure
+- Responsive behavior across devices
 
 ## Folder structure
 

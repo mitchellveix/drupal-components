@@ -2,7 +2,14 @@
 
 https://mitchellveix.github.io/drupal-components/promo-card-display
 
-A standalone recreation of a Drupal promo card display component originally built for the Visit Sarasota website.
+A reusable promotional card component originally developed for the Visit Sarasota website. This component was recreated to demonstrate scalable card-based design patterns commonly used within destination marketing and content-driven websites.
+
+## Features
+- Responsive card-based layout
+- Reusable content structure for promotional campaigns and featured content
+- Consistent spacing, typography, and visual hierarchy
+- Accessible markup and interactive elements
+- Component-based styling approach for easy maintenance and future expansion
 
 ## Folder structure
 

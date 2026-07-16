@@ -2,7 +2,14 @@
 
 https://mitchellveix.github.io/drupal-components/promo-full-image/
 
-A standalone recreation of a Drupal promo full image component originally built for the Visit Sarasota website.
+A full-width promotional component originally developed for the Visit Sarasota website. This component showcases the integration of imagery, content hierarchy, and calls-to-action within a visually engaging responsive layout.
+
+## Features
+- Responsive full-image promotional layout
+- Flexible content positioning for different design requirements
+- Accessible text and link structures
+- Optimized image presentation across screen sizes
+- Reusable component pattern suitable for Drupal content management workflows
 
 ## Folder structure
 

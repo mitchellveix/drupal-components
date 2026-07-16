@@ -2,7 +2,14 @@
 
 https://mitchellveix.github.io/drupal-components/related-content/
 
-A standalone recreation of a Drupal related-content component originally built for the Louisiana Poverty Point website.
+A reusable content discovery component originally developed for the Louisiana Poverty Point website. This component was recreated as a standalone front-end implementation to demonstrate Drupal component architecture, responsive layouts, and accessible content presentation patterns.
+
+## Features
+- Responsive content card layout optimized for desktop, tablet, and mobile devices
+- Reusable structure for displaying related articles
+- Semantic HTML markup following accessibility best practices
+- Component-based SCSS architecture for maintainable styling
+- Flexible content patterns designed for CMS-driven websites
 
 ## Folder structure
 
